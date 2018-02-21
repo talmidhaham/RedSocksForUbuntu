@@ -32,10 +32,11 @@ Ater updaing the OS run following command to install the packae:
 (it was important to add the "root" user to the iptables )
 
 
-(installation et configuration
+(
+installation et configuration
 tuto:
-1) https://linuxaria.com/article/redirect-all-tcp-traffic-through-transparent-socks5-proxy-in-linux
-2)http://jmkhael.io/escape-proxy-hell-with-redsocks/
+	1) https://linuxaria.com/article/redirect-all-tcp-traffic-through-tranparent-socks5-proxy-in-linux
+	2)http://jmkhael.io/escape-proxy-hell-with-redsocks/
 )
 
 Step 3: Start and Stop of redsocks
