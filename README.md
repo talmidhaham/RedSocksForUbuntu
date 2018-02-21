@@ -34,7 +34,9 @@ Ater updaing the OS run following command to install the packae:
 
 ( installation et configuration
   tuto:
+  
 	1) https://linuxaria.com/article/redirect-all-tcp-traffic-through-transparent-socks5-proxy-in-linux
+	
 	2) http://jmkhael.io/escape-proxy-hell-with-redsocks/
 )
 
