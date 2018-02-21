@@ -20,20 +20,35 @@ sudo apt-get install proxychains
 
 Step 1: Update system:
 
-	sudo apt-get update
+	sudo proxychains apt-get update
 
 Step 2: Install: redsocks
 
 Ater updaing the OS run following command to install the packae:
 
-	sudo apt-get install redsocks
+	sudo proxychains  apt-get install redsocks
 
-iptables -F
-iptables -X
-iptables -t nat -F
-iptables -t nat -X
-iptables -t mangle -F
-iptables -t mangle -X
-iptables -P INPUT ACCEPT
-iptables -P FORWARD ACCEPT
-iptables -P OUTPUT ACCEPT
+(installation et configuration tuto https://linuxaria.com/article/redirect-all-tcp-traffic-through-transparent-socks5-proxy-in-linux)
+
+Start and Stop of redsocks
+
+To start redsocks and iptables
+
+(please see the files for my personnal conf )
+(it was important to add the "root" user to the iptables )
+
+redsocks -c ../../etc/redsocks.conf
+../../etc/redsocks-iptables.sh
+
+To stop redsocks and iptables:
+
+sudo iptables -F
+sudo iptables -X 
+sudo iptables -Z
+sudo iptables -t nat -F
+sudo iptables -t nat -X
+sudo iptables -t nat -Z
+killall redsocks
+
+Now you're good to go and all the network will go throught the socks5 proxy
+GOOD LUCK
