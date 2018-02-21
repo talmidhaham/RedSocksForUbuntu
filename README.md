@@ -36,20 +36,20 @@ Ater updaing the OS run following command to install the packae:
 
 Step 3: Start and Stop of redsocks
 
-To start redsocks and iptables
+To start redsocks and iptables:
 
-sudo redsocks -c ../../etc/redsocks.conf
-sudo ../../etc/redsocks-iptables.sh
+   	 sudo redsocks -c ../../etc/redsocks.conf
+	 sudo ../../etc/redsocks-iptables.sh
 
 To stop redsocks and iptables:
 
-sudo iptables -F
-sudo iptables -X 
-sudo iptables -Z
-sudo iptables -t nat -F
-sudo iptables -t nat -X
-sudo iptables -t nat -Z
-killall redsocks
+   	sudo iptables -F
+	sudo iptables -X 
+	sudo iptables -Z
+	sudo iptables -t nat -F
+	sudo iptables -t nat -X
+	sudo iptables -t nat -Z
+	killall redsocks
 
 Now you're good to go and all the network will go throught the socks5 proxy
 GOOD LUCK
