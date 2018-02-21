@@ -28,17 +28,18 @@ Ater updaing the OS run following command to install the packae:
 
 	sudo proxychains  apt-get install redsocks
 
-(installation et configuration tuto https://linuxaria.com/article/redirect-all-tcp-traffic-through-transparent-socks5-proxy-in-linux)
-
-Start and Stop of redsocks
-
-To start redsocks and iptables
-
 (please see the files for my personnal conf )
 (it was important to add the "root" user to the iptables )
 
-redsocks -c ../../etc/redsocks.conf
-../../etc/redsocks-iptables.sh
+
+(installation et configuration tuto https://linuxaria.com/article/redirect-all-tcp-traffic-through-transparent-socks5-proxy-in-linux)
+
+Step 3: Start and Stop of redsocks
+
+To start redsocks and iptables
+
+sudo redsocks -c ../../etc/redsocks.conf
+sudo ../../etc/redsocks-iptables.sh
 
 To stop redsocks and iptables:
 
